@@ -1,0 +1,17 @@
+<div class="row">
+  <div
+    class="col-md-4 col-sm-6 animate__animated animate__bounceInDown"
+    *ngFor="let gifs of resultados"
+  >
+    <div class="card">
+      <img
+        [src]="gifs.images.downsized_medium.url"
+        [alt]="gifs.title"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <div class="card-text"></div>
+      </div>
+    </div>
+  </div>
+</div>
